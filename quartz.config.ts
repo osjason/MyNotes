@@ -11,7 +11,9 @@ const config: QuartzConfig = {
     pageTitle: "白加蓝的双链笔记",
     enableSPA: true,
     enablePopovers: true,
-    analytics: null,
+    analytics: {
+      provider: "plausible"
+    },
     locale: "zh-CN",
     baseUrl: "obsidian-note-five.vercel.app",
     ignorePatterns: ["private", "templates", ".obsidian"],
