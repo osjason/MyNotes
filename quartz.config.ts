@@ -8,14 +8,10 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "星空笔记",
+    pageTitle: "白加蓝的双链笔记",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "umami",
-      host: "https://umami-gojalfqv.bja.sealos.run",
-      websiteId: "fd9f1b57-2870-4a6d-8b14-30ca508ac523"
-    },
+    analytics: null,
     locale: "zh-CN",
     baseUrl: "obsidian-note-five.vercel.app",
     ignorePatterns: ["private", "templates", ".obsidian"],
