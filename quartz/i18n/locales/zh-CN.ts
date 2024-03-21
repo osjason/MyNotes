@@ -23,7 +23,7 @@ export default {
     },
     backlinks: {
       title: "反向链接",
-      noBacklinksFound: "无法找到反向链接",
+      noBacklinksFound: "暂时没有反向链接",
     },
     themeToggle: {
       lightMode: "亮色模式",
@@ -33,7 +33,7 @@ export default {
       title: "探索",
     },
     footer: {
-      createdWith: "Created with",
+      createdWith: "本站使用",
     },
     graph: {
       title: "关系图谱",
