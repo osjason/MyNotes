@@ -16,9 +16,10 @@ export default ((opts?: Options) => {
         <hr />
         <p>
           {i18n(cfg.locale).components.footer.createdWith}{" "}
-          <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a> © {year}
+          <a href="https://quartz.jzhao.xyz/">Quartz</a> 开源模板进行搭建，笔记使用 <a href="https://obsidian.md/">Obsidian</a> 软件编写 © {year}
         </p>
         <ul>
+          <li><a>友链：</a></li>
           {Object.entries(links).map(([text, link]) => (
             <li>
               <a href={link}>{text}</a>
