@@ -9,15 +9,15 @@ Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility 
 
 [Join the Discord Community](https://discord.gg/cRFFHYye7t)
 
-# 请使用 VScode 编辑项目并配合 Git 上传
+## 请使用 VScode 编辑项目并配合 Git 上传
 
 请及时配置 user.email 和 user.name
 
-# 请使用 Obsidian 编辑 content 笔记内容
+## 请使用 Obsidian 编辑 content 笔记内容
 
 如需重新创建，建议删除 content 文件夹，并重新使用 Obsidian 在根路径创建一个同名仓库
 
-# 本地演示命令
+## 本地演示命令
 
 ```powershell
 npm i
@@ -25,7 +25,7 @@ npx quartz build --serve
 # 参考 https://quartz.jzhao.xyz/build
 ```
 
-# 远程推送
+## 远程推送
 
 请修改[配置文件](./quartz.config.ts) 下面几项
 
@@ -45,7 +45,7 @@ const config: QuartzConfig = {
 // ...
 ```
 
-# Quartz v4 Sponsors
+## Quartz v4 Sponsors
 
 <p align="center">
   <a href="https://github.com/sponsors/jackyzha0">
