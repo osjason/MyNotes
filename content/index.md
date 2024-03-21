@@ -1,6 +1,7 @@
 ---
-title: Welcome to Quartz
+title: 欢迎来到白加蓝的双链笔记空间
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+## 2024年3月21日
+
+目前笔记主题为：个人IP创业、前端技术学习、心理学相关
