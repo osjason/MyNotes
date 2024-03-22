@@ -8,6 +8,7 @@ import { visit } from "unist-util-visit"
 import { Root, Element, ElementContent } from "hast"
 import { GlobalConfiguration } from "../cfg"
 import { i18n } from "../i18n"
+import Twikoo from "./Twikoo"
 
 interface RenderComponents {
   head: QuartzComponent
@@ -193,6 +194,7 @@ export function renderPage(
   } = components
   const Header = HeaderConstructor()
   const Body = BodyConstructor()
+  const MyTwikoo = Twikoo()
 
   const LeftComponent = (
     <div class="left sidebar">
@@ -232,26 +234,7 @@ export function renderPage(
                 </div>
               </div>
               <Content {...componentData} />
-              <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"></link>
-              <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-              <script>{`
-  window.onload = function() {
-    const gitalk = new Gitalk({
-      clientID: 'e3040310431fe25ce519',
-      clientSecret: '899060716047823dd97d8a40a1513310177adbc5',
-      repo: 'MyNotes',      // The repository of store comments,
-      owner: 'osjason',
-      admin: ['osjason'],
-      id: location.pathname,      // Ensure uniqueness and length less than 50
-      distractionFreeMode: false,  // Facebook-like distraction free mode
-      pagerDirection: 'last',
-      labels: ['Gitalk']
-    });
-    gitalk.render('gitalk-container');
-  }
-  `}
-              </script>
-              <div id="gitalk-container"></div>
+              <MyTwikoo {...componentData}/>
             </div>
             {RightComponent}
           </Body>
