@@ -9,24 +9,27 @@ ul.section-ul {
 li.section-li {
   margin-bottom: 1em;
 
-  & > .section {
+  &>.section {
     display: grid;
-    grid-template-columns: 6em 3fr 1fr;
+    grid-template-columns: 7em 3fr 1fr;
 
     @media all and (max-width: $mobileBreakpoint) {
-      & > .tags {
+      &>.tags {
         display: none;
       }
     }
 
-    & > .desc > h3 > a {
+    &>.desc>h3>a {
       background-color: transparent;
     }
 
-    & > .meta {
+    &>.meta {
       margin: 0;
       flex-basis: 6em;
       opacity: 0.6;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 }
@@ -34,7 +37,8 @@ li.section-li {
 // modifications in popover context
 .popover .section {
   grid-template-columns: 6em 1fr !important;
-  & > .tags {
+
+  &>.tags {
     display: none;
   }
 }
