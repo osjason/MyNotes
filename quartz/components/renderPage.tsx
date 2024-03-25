@@ -234,6 +234,7 @@ export function renderPage(
                 </div>
               </div>
               <Content {...componentData} />
+              <hr/>
               <MyTwikoo {...componentData}/>
             </div>
             {RightComponent}
